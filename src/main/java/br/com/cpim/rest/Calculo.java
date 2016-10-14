@@ -37,7 +37,7 @@ public class Calculo {
 		case 'd':
 			this.operacao = "divisao";
 			if(this.b != 0){
-				this.total = this.a / this.b;			
+				this.total = (double) this.a / (double) this.b;			
 			} else {
 				this.erro="Erro divisao por zero";
 			}
