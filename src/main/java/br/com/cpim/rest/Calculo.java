@@ -5,8 +5,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 public class Calculo {
 
-	private int a;
-	private int b;
+	private double a;
+	private double b;
 	private String operacao;
 	private double total;
 	private String erro;
@@ -50,20 +50,19 @@ public class Calculo {
 	}
 
 
-
-	public int getA() {
+	public double getA() {
 		return a;
 	}
 
-	public void setA(int a) {
+	public void setA(double a) {
 		this.a = a;
 	}
 
-	public int getB() {
+	public double getB() {
 		return b;
 	}
 
-	public void setB(int b) {
+	public void setB(double b) {
 		this.b = b;
 	}
 
@@ -93,7 +92,6 @@ public class Calculo {
 
 	@Override
 	public String toString() {
-		return "Calculo [a=" + a + ", b=" + b + ", operacao=" + operacao
-				+ ", total=" + total + ", erro=" + erro + "]";
+		return "Calculo de " + operacao + " [ " + a + ", b=" + b + ", total = " + total + ", erro = " + erro + "]";
 	}	
 }
