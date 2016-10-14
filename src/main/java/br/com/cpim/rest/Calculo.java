@@ -92,6 +92,6 @@ public class Calculo {
 
 	@Override
 	public String toString() {
-		return "Calculo de " + operacao + " [ " + a + ", b=" + b + ", total = " + total + ", erro = " + erro + "]";
+		return "Calculo de " + operacao + " [a=" + a + ", b=" + b + ", total = " + total + ", erro = " + erro + "]";
 	}	
 }
